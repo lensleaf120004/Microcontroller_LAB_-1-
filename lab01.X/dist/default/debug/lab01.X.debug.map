@@ -1,0 +1,44 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Sat Nov 09 09:45:36 2024
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x00003a
+                   .cinit    romdata   0x00003a    program   0x000002
+.config_300001_BUILD/DEFAULT/DEBUG/HW1_BONUS.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/HW1_BONUS.O    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00003b      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            62 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   check2   0x00001c    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+               check2_add   0x000026    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+               check2_sub   0x00002c    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+              loop_check1   0x00000c    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+                   rotate   0x000032    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+              loop_check1   0x00000c    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+                   check2   0x00001c    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+               check2_add   0x000026    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+               check2_sub   0x00002c    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+                   rotate   0x000032    program     static C:\Users\nknk0\MPLABXProjects\lab01.X\hw1_bonus.asm
+
+

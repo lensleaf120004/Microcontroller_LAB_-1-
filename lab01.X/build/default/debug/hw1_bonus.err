@@ -1,0 +1,6 @@
+Warning[205] C:\USERS\NKNK0\MPLABXPROJECTS\LAB01.X\HW1_BONUS.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\NKNK0\MPLABXPROJECTS\LAB01.X\HW1_BONUS.ASM 17 : Found label after column 1. (loop_check1)
+Warning[207] C:\USERS\NKNK0\MPLABXPROJECTS\LAB01.X\HW1_BONUS.ASM 25 : Found label after column 1. (check2)
+Warning[207] C:\USERS\NKNK0\MPLABXPROJECTS\LAB01.X\HW1_BONUS.ASM 30 : Found label after column 1. (check2_add)
+Warning[207] C:\USERS\NKNK0\MPLABXPROJECTS\LAB01.X\HW1_BONUS.ASM 34 : Found label after column 1. (check2_sub)
+Warning[207] C:\USERS\NKNK0\MPLABXPROJECTS\LAB01.X\HW1_BONUS.ASM 38 : Found label after column 1. (rotate)

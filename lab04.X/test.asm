@@ -1,0 +1,63 @@
+#INCLUDE <p18f4520.inc>
+CONFIG OSC = INTIO67
+CONFIG WDT = OFF
+org 0x00 ;PC = 0x00
+
+start: 
+    
+    CLRF 0x032         
+    CLRF 0x033 ; Fn-2
+    
+    CLRF 0x030
+    CLRF 0x031 ; Fn-1
+    
+    MOVLW 0x01
+    MOVWF 0x031
+    
+    ; ?? n = 9 (????)
+    MOVLW 0x0F
+    MOVWF 0x020        ; n ??? 0x020
+    
+    DECF 0x020
+    
+    
+loop:
+    rcall fib 
+    DECFSZ 0x020 
+
+    GOTO loop 
+    GOTO finish 
+
+fib:
+    ; ?? Fn = Fn-1 + Fn-2
+    ; ????
+    MOVF 0x033, W      ; ? Fn-2 ??
+    ADDWF 0x031, W     ; ? Fn-1 ??
+    MOVWF 0x035        ; ???????? 0x035
+    
+    
+    ; ????
+    MOVF 0x032, W      ; ? Fn-2 ??
+    ADDWFC 0x030, W     ; ? Fn-1 ??
+    MOVWF 0x034       ; ???????? 0x034
+    
+    ; ????? [0x000] ? [0x001]
+    MOVFF 0x035, 0x001 ; ??????
+    MOVFF 0x034, 0x000 ; ??????
+    
+    ; ?? Fn-2 = Fn-1
+    MOVFF 0x031, 0x033 ; ? Fn-1 ????? Fn-2 ??
+    MOVFF 0x030, 0x032 ; ? Fn-1 ????? Fn-2 ??
+    
+    ; ?? Fn-1 = Fn
+    MOVFF 0x035, 0x031 ; ? Fn ????????? Fn-1 ??
+    MOVFF 0x034, 0x030 ; ? Fn ????????? Fn-1 ??
+    
+    RETURN
+
+finish:
+    NOP
+    end
+
+
+
